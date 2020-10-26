@@ -50,8 +50,7 @@ public class Pendu {
     }
 
     // Verifie si la lettre entrée existe dans le mot, si oui la faire apparaitre
-    // dans
-    // le modèle
+    // dans le squelette
     public static List<String> checkLettre(List<String> mot, List<String> squelette, String lettre) {
         for (int i = 0; i < mot.size(); i++) {
             if ((mot.get(i)).equals(lettre)) {
@@ -76,7 +75,7 @@ public class Pendu {
             String reponse = generationMot();
             liste = motEnArray(reponse);
 
-            // Génération modèle vide du mot
+            // Génération squelette du mot
             squelette = generationSqueletteMot(reponse);
             System.out.println(squelette.toString());
 
